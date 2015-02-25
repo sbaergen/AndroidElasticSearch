@@ -22,19 +22,19 @@ public class SimpleSearchCommand {
 	}
 
 	static class SimpleSearchQuery {
-		private SimpleSearchQueryString queryString;
+		private SimpleSearchQueryString query_string;
 		
 		public SimpleSearchQuery(String query) {
 			super();
-			this.queryString = new SimpleSearchQueryString(query);
+			this.query_string = new SimpleSearchQueryString(query);
 		}
 
 		public SimpleSearchQueryString getQueryString() {
-			return queryString;
+			return query_string;
 		}
 
 		public void setQueryString(SimpleSearchQueryString queryString) {
-			this.queryString = queryString;
+			this.query_string = queryString;
 		}
 
 		static class SimpleSearchQueryString {
